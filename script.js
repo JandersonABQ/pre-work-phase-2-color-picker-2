@@ -1,5 +1,7 @@
 window.onload = function () {
-    initColorPicker();
+    initColorPicker()
+    console.log("Red.value:",rgb.red.value);
+
 };
 function initColorPicker() {
     let colorBox = document.getElementById("color-box");
@@ -8,7 +10,7 @@ function initColorPicker() {
         green: document.getElementById("green"),
         blue: document.getElementById("blue")
     };
-    let colorPickers = document.getElementsByClassName("picker");
+    let colorPickers = document.getElementsByClassName("picker-control");
     setColorPickerEventListeners(colorBox, rgb, colorPickers);
 }
 
